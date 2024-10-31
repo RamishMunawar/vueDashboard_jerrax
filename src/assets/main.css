@@ -1,0 +1,92 @@
+/* @import './base.css'; */
+/* Dashbord css logo name */
+.bg-left{
+    background-color: #f4f3ef;
+}
+.sidebar_bg{
+    background-color: #212120;
+    max-width: fit-content;
+    color: white;
+    font-size: 14px;
+    height: 900px;
+}
+.img_logo{
+    max-width: 14%;
+    height: 14%;
+}
+.dashboard_name{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+}
+/* Dashbord css logo name */
+.color_profile{
+    color: #adadad !important;
+}
+.accordion-body {
+    color: #adadad !important;
+}
+.router_color{
+    color: #adadad !important;
+    text-decoration: none;
+}
+.router_color:hover{
+    color: white !important;
+
+}
+.accordion-body:hover {
+    color: white !important;
+}
+.accordion-button{
+    color: #adadad !important;
+}
+.accordion-button:hover{
+    color: #adadad !important;
+}
+.accordion > .accordion-item {
+    outline: none !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+.accordion > .accordion-item:active{
+    outline: none !important;
+    border: none;
+    background-color: transparent !important;
+}
+
+.accordion-button{
+    background-color: transparent !important;
+
+}
+.accordion-button:not(.collapsed) {
+    box-shadow:unset !important;
+}
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: unset !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+    color: white !important;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+    filter: brightness(0) invert(1) !important; 
+}
+
+.router-link-active{
+    color: white !important;
+}
