@@ -1,5 +1,6 @@
 /* @import './base.css'; */
 /* Dashbord css logo name */
+
 .bg-left{
     background-color: #f4f3ef;
 }
@@ -8,15 +9,16 @@
     max-width: fit-content;
     color: white;
     font-size: 14px;
-    height: 900px;
+    padding-bottom: 20px;
+  
 }
 .img_logo{
-    max-width: 14%;
+    max-width: 17%;
     height: 14%;
 }
 .dashboard_name{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
 
 }
@@ -39,10 +41,15 @@
     color: white !important;
 }
 .accordion-button{
+    font-size: 14px !important;
     color: #adadad !important;
 }
 .accordion-button:hover{
     color: #adadad !important;
+}
+.arrow{
+    color: #adadad !important;
+
 }
 .accordion > .accordion-item {
     outline: none !important;
@@ -89,4 +96,33 @@
 
 .router-link-active{
     color: white !important;
+}
+
+/* .router-link-active:active + .arrow {
+    display: block; /* Adjust as necessary */
+/* } */ 
+.accordion-item{
+   position: relative;
+}
+.arrow {
+    width: 0; /* Adjusting for arrow shape */
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white; /* Arrow pointing down */
+    display: none; /* Change to block to make it visible */
+    position: absolute;
+    right: 0;
+    transform: rotate(-89deg);
+    transition: transform 0.3s ease-out; /* Smooth transition for rotation */
+}
+
+
+.router-link-active .arrow {
+    display: block; /* Show the arrow when this link is active */
+
+}
+
+.icon-size{
+    max-width: 17%;
 }
