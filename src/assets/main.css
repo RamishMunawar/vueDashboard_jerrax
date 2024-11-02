@@ -126,3 +126,27 @@
 .icon-size{
     max-width: 17%;
 }
+
+
+
+.dashboard_card{
+    background: #b8d8d8;
+}
+.dashboard_order{
+    background: #d5e5a3;
+}
+.dashboard_visitor {
+    background: #ff8f5e;
+}
+.dashboard_subscription{
+    background: #d6c1ab;
+}
+.footer ul {
+display: flex;
+gap: 40px;
+}
+
+.footer ul li{
+   text-decoration: none;
+   list-style: none;
+}
