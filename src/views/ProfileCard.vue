@@ -12,7 +12,7 @@
     </h2>
     <div class="border-bottom">
     <div id="panelsStayOpen-collapseOne" v-for="items in profileName" :key="items" class="accordion-collapse collapse  text-white " aria-labelledby="panelsStayOpen-headingOne">
-      <RouterLink :to="items.routeName" class="router_color d-flex align-items-center gap-4">
+      <RouterLink class="router_color d-flex align-items-center gap-4">
             <span class="px-2  py-2">{{ items.shortName }}</span>{{ items.name }}
             <!-- <div class="arrow"></div> -->
         </RouterLink>
@@ -30,9 +30,9 @@
 <script setup>
 
 const profileName= [
-    { name:"My Profile", shortName: "MP" , routeName : "/"},
-    { name:"Edit Profile", shortName: "EP", routeName : "/EditProfileView"},
-    { name:"Settings", shortName: "S",routeName : "/SettingsPage"}
+    { name:"My Profile", shortName: "MP"  },
+    { name:"Edit Profile", shortName: "EP" },
+    { name:"Settings", shortName: "S"}
 ]
 
 </script>

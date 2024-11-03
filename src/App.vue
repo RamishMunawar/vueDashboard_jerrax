@@ -11,7 +11,7 @@ import MainSideBar from "./views/MainSideBar.vue";
     <div class="sidebar_bg col-2 px-3">
       <div class="d-flex align-items-center gap-4 py-3 border-bottom">
         <img class="img_logo" src="./assets/logo.png" alt="" />
-        <RouterLink to="/" class="dashboard_name fw-bolder"
+        <RouterLink to="/stats" class="dashboard_name fw-bolder"
           >Jerrax Dashboard</RouterLink
         >
       </div>
