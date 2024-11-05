@@ -23,6 +23,7 @@
   </template>
       
       <script setup>  
+      
   import { ref, onMounted, computed } from "vue";
   
   const map = ref(null);
@@ -76,8 +77,13 @@
   
   // Lifecycle hook
   onMounted(() => {
-    // You can access all Jsvectormap's methods
-    const vueMap = map.value.getMap();
+  if (map.value) {
+    // const vueMap = map.value.getMap();
+    // You can now safely use vueMap
     // console.log(vueMap);
-  });
+  } else {
+    console.error("Map reference is null");
+  }
+});
+
   </script>

@@ -1,27 +1,12 @@
 <template>
-  <div class="card">
-    <div class="card-body">
-      <div class="d-flex flex-wrap justify-content-between align-items-center">
-        <div>
-          <h4>$34,657</h4>
-        </div>
-        <div>
-          <span class="text-white bg-success p-1 rounded-5 border"> +18% </span>
-        </div>
+      <div class="chart-container">
+        <Bar :data="chartData" :options="chartOptions" />
       </div>
-      Total EARNINGS <span class="text-muted">in last</span> TEN
-      <span class="text-muted"> quarters</span>
-      <div>
-        <Bar :data="chartData" :options="chartOptions" class="h-400" />
-      </div>
-    </div>
-  </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import { Bar } from "vue-chartjs";
-
 import {
   Chart as ChartJS,
   Title,
@@ -77,19 +62,12 @@ const chartOptions = ref({
   responsive: true,
   maintainAspectRatio: false,
 });
-
-// Define any props if necessary
-const props = defineProps({
-  imgsrc: String,
-  title: String,
-  value: Number,
-  updates: String,
-  reloadIcon: String,
-});
 </script>
 
 <style scoped>
-.card {
-  /* Add any custom styles for the card here */
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Set a height for the chart */
 }
 </style>

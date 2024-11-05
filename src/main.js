@@ -9,7 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import VueVectorMap from 'vuevectormap';
 import 'jsvectormap/dist/maps/world.js';
-import 'jsvectormap/dist/jsvectormap.css'
+import 'jsvectormap/dist/jsvectormap.css';
+
 
 library.add(fas);
 
