@@ -16,11 +16,12 @@
 
 <script setup>
 // In Stats.vue
-import StatsCard from "./StatsCard.vue";
-import Chart1 from "./charts/chart1.vue";
-import Chart2 from "./charts/chart2.vue";
-import Chart3 from "./charts/chart3.vue";
-import Chart4 from "./charts/chart4.vue";
+import StatsCard from "../RoutePages/StatsCard.vue";
+import Chart1 from "@/views/charts/chart1.vue";
+import Chart2 from "@/views/charts/chart2.vue";
+import Chart3 from "@/views/charts/chart3.vue";
+import Chart4 from "@/views/charts/chart4.vue";
+
 const statsCards = [
   {
     title: "2015 Sales",

@@ -23,7 +23,11 @@
               <tbody>
                 <tr v-for="(country, index) in countries" :key="index">
                   <td>
-                    <img :src="country.flag" alt="" style="width: 20px; height: auto;" />
+                    <img
+                      :src="country.flag"
+                      alt=""
+                      style="width: 20px; height: auto"
+                    />
                   </td>
                   <td>{{ country.name }}</td>
                   <td>{{ country.sales }}</td>
@@ -39,39 +43,39 @@
 </template>
 
 <script setup>
-import JsvectorMap from './JsvectorMap.vue';
+import JsvectorMap from "../RoutePages/JsvectorMap.vue";
 
 // Define your countries data
 const countries = [
   {
-    name: 'USA',
-    sales: '2,920',
-    percentage: '53.23%',
-    flag: 'src/assets/country img/US.webp' 
+    name: "USA",
+    sales: "2,920",
+    percentage: "53.23%",
+    flag: "src/assets/country img/US.webp",
   },
   {
-    name: 'Germany',
-    sales: '1,300',
-    percentage: '20.43%',
-    flag: 'src/assets/country img/DE.webp'
+    name: "Germany",
+    sales: "1,300",
+    percentage: "20.43%",
+    flag: "src/assets/country img/DE.webp",
   },
   {
-    name: 'Australia',
-    sales: '760',
-    percentage: '7.87%',
-    flag: 'src/assets/country img/AU.webp'
+    name: "Australia",
+    sales: "760",
+    percentage: "7.87%",
+    flag: "src/assets/country img/AU.webp",
   },
   {
-    name: 'Romania',
-    sales: '600',
-    percentage: '5.94%',
-    flag: 'src/assets/country img/RO.png'
+    name: "Romania",
+    sales: "600",
+    percentage: "5.94%",
+    flag: "src/assets/country img/RO.png",
   },
   {
-    name: 'Brazil',
-    sales: '550',
-    percentage: '4.34%',
-    flag: 'src/assets/country img/BR.webp' 
+    name: "Brazil",
+    sales: "550",
+    percentage: "4.34%",
+    flag: "src/assets/country img/BR.webp",
   },
 ];
 </script>

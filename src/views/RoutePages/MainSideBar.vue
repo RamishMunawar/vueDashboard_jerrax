@@ -30,7 +30,7 @@
             >
               <span class="px-2 py-2">{{ Dashboarditems.shortName }}</span
               >{{ Dashboarditems.name }}
-              <!-- <div class="arrow"></div> -->
+              <arrowSign />
             </RouterLink>
           </div>
         </div>
@@ -72,7 +72,7 @@
             >
               <span class="px-2 py-2">{{ Componentitems.shortName }}</span
               >{{ Componentitems.name }}
-              <!-- <div class="arrow"></div> -->
+              <!-- <arrowSign /> -->
             </RouterLink>
           </div>
         </div>
@@ -114,7 +114,7 @@
             >
               <span class="px-2 py-2">{{ Formsitems.shortName }}</span
               >{{ Formsitems.name }}
-              <!-- <div class="arrow"></div> -->
+              <!-- <arrowSign /> -->
             </RouterLink>
           </div>
         </div>
@@ -156,7 +156,7 @@
             >
               <span class="px-2 py-2">{{ Tableitems.shortName }}</span
               >{{ Tableitems.name }}
-              <!-- <div class="arrow"></div> -->
+              <!-- <arrowSign /> -->
             </RouterLink>
           </div>
         </div>
@@ -195,7 +195,7 @@
             >
               <span class="px-2 py-2">{{ Mapitems.shortName }}</span
               >{{ Mapitems.name }}
-              <!-- <div class="arrow"></div> -->
+              <!-- <arrowSign /> -->
             </RouterLink>
           </div>
         </div>
@@ -204,13 +204,13 @@
   </div>
   <div class="mt-4 d-flex gap-4 align-items-center">
     <font-awesome-icon class="icon-size" :icon="['fas', 'chart-simple']" />
-    <RouterLink class="router_color d-flex align-items-center gap-4">
+    <RouterLink to="/Chartpages" class="router_color d-flex align-items-center gap-4">
       Charts
     </RouterLink>
   </div>
   <div class="mt-4 d-flex gap-4 align-items-center">
     <font-awesome-icon class="icon-size" :icon="['fas', 'calendar']" />
-    <RouterLink class="router_color d-flex align-items-center gap-4">
+    <RouterLink to="/Calander" class="router_color d-flex align-items-center gap-4">
       Calander
     </RouterLink>
   </div>
@@ -249,7 +249,8 @@
             >
               <span class="px-2 py-2">{{ Pagesitems.shortName }}</span
               >{{ Pagesitems.name }}
-              <!-- <div class="arrow"></div> -->
+
+              <!-- <arrowSign /> -->
             </RouterLink>
           </div>
         </div>
@@ -259,6 +260,7 @@
 </template>
 
 <script setup>
+import arrowSign from "./arrowSign.vue";
 import { RouterLink } from "vue-router";
 const DashboardProfile = [
   { name: "Overview", shortName: "O", routeName: "/" },
@@ -268,37 +270,37 @@ const DashboardProfile = [
 const Componentsprofile = [
   { name: "Buttons", shortName: "B", routeName: "/buttonPages" },
   { name: "Grid System", shortName: "G", routeName: "/GridSystem" },
-  { name: "Panels", shortName: "p" },
-  { name: "Sweet Alert", shortName: "S" },
-  { name: "Notifications", shortName: "N" },
-  { name: "Icons", shortName: "I" },
-  { name: "Typography", shortName: "T" },
+  { name: "Panels", shortName: "p", routeName: "/Panels" },
+  { name: "Sweet Alert", shortName: "S", routeName: "/SweetAlert" },
+  { name: "Notifications", shortName: "N", routeName: "/notificationPages" },
+  { name: "Icons", shortName: "I", routeName: "/iconsPages" },
+  { name: "Typography", shortName: "T", routeName: "/typography" },
 ];
 
 const Formsprofile = [
-  { name: "Regular Forms", shortName: "R" },
-  { name: "Extended Forms", shortName: "E" },
-  { name: "Validation Forms", shortName: "V" },
-  { name: "Wizard", shortName: "W" },
+  { name: "Regular Forms", shortName: "R", routeName: "/RegularForm" },
+  { name: "Extended Forms", shortName: "E", routeName: "/ExtendedForms" },
+  { name: "Validation Forms", shortName: "V", routeName: "/ValidationForms" },
+  { name: "Wizard", shortName: "W", routeName: "/WizardPages" },
 ];
 
 const TableListprofile = [
-  { name: "Regular Tables", shortName: "R" },
-  { name: "Extended Tables", shortName: "E" },
-  { name: "Paginated Tables", shortName: "P" },
+  { name: "Regular Tables", shortName: "R", routeName: "/RegularTables" },
+  { name: "Extended Tables", shortName: "E", routeName: "/ExtendedTables" },
+  { name: "Paginated Tables", shortName: "P", routeName: "/PaginatedTables" },
 ];
 
 const Mapsprofile = [
-  { name: "Google Maps", shortName: "G" },
-  { name: "Full Screen Maps", shortName: "F" },
-  { name: "Vector Maps", shortName: "V" },
+  { name: "Google Maps", shortName: "G", routeName: "/GoogleMaps" },
+  { name: "Full Screen Maps", shortName: "F", routeName: "/FullScreenMaps" },
+  { name: "Vector Maps", shortName: "V", routeName: "/VectorMaps" },
 ];
 
 const Pagesprofile = [
-  { name: "User Page", shortName: "U" },
-  { name: "Timeline Page", shortName: "T" },
-  { name: "Login Page", shortName: "L" },
-  { name: "Register Page", shortName: "R" },
+  { name: "User Page", shortName: "U", routeName: "/UserPages" },
+  { name: "Timeline Page", shortName: "T" ,routeName: "/TimelinePage" },
+  { name: "Login Page", shortName: "L",   routeName: "/LoginPage" },
+  { name: "Register Page", shortName: "R" , routeName: "/RegisterPage" },
 ];
 </script>
 
